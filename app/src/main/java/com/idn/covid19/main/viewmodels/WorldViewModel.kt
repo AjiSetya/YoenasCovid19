@@ -16,13 +16,14 @@ class WorldViewModel(application: Application) : AndroidViewModel(application) {
 
     fun getWorld() {
         isLoading.set(true)
-        mainRepository.getWorld({
-            isLoading.set(false)
-            cekWorldResponse.postValue(it)
-        }, {
-            isLoading.set(false)
-            error.postValue(it)
-        }
+        mainRepository.getWorld(
+            {
+                isLoading.set(false)
+                cekWorldResponse.postValue(it)
+            }, {
+                isLoading.set(false)
+                error.postValue(it)
+            }
         )
     }
 

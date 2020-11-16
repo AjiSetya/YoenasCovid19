@@ -19,5 +19,7 @@
     <color name="color_warning">#FFFCAF27</color>
     <color name="color_info">#FF67D0DE</color>
     <color name="color_danger">#FFE65B61</color>
+
+    <color name="windows_color">#F6F6F6</color>
 </resources>
 

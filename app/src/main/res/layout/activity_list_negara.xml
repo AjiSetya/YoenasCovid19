@@ -22,7 +22,7 @@
             android:id="@+id/appbar_list_country"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="@android:color/white"
+            android:background="@color/white"
             android:elevation="0dp"
             android:fitsSystemWindows="true"
             android:paddingBottom="24dp"
@@ -36,7 +36,7 @@
                 android:fitsSystemWindows="true"
                 android:theme="@style/ToolbarTheme"
                 app:collapsedTitleTextAppearance="@style/collapsed_app_bar"
-                app:contentScrim="@android:color/white"
+                app:contentScrim="@color/white"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed"
                 app:toolbarId="@+id/toolbar_list_country">
 
@@ -44,8 +44,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/container_head_title"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/white">
+                    android:layout_height="match_parent">
 
                     <TextView
                         android:id="@+id/textView3"
@@ -90,7 +89,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="28dp"
-            android:background="@android:color/white"
             android:paddingTop="2dp"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
@@ -109,7 +107,6 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
             app:layout_anchor="@id/appbar_list_country"
@@ -129,7 +126,9 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:queryBackground="@null"
-                app:queryHint="@string/search" />
+                app:queryHint="@string/search">
+
+            </androidx.appcompat.widget.SearchView>
 
             <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/btn_sort_country"
